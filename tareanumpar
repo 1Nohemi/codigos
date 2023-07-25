@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int n, *direccion_num;
+    cout<<"ingrese un numero:"<<endl;
+    cin>>n;
+    direccion_num=&n;
+    
+    if (*direccion_num%2==0){
+    cout<<"El numero "<<*direccion_num<<" es par"<<endl;
+    cout<<"Esta en la posicion de memoria: "<<direccion_num<<endl;
+    }
+    else{
+    cout<<"El numero "<<*direccion_num<<" impar"<<endl;
+    cout<<"Posicion: "<<direccion_num<<endl;
+    }
+    
+    return 0;
+}
