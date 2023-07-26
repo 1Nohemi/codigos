@@ -1,0 +1,25 @@
+Algoritmo determinar_si_un_numero_es_par_o_impar
+	Definir num, residuo, n, contadorpar, contadorimpar Como Entero
+	Escribir "cuantos numeros desea contar"
+	Leer n
+	contadorimpar=0
+	contadorpar=0
+	Para x <-1 Hasta n Con Paso 1 Hacer
+		Escribir "ingrese el numero ", x ":"
+		Leer num
+		residuo<-num%2
+		si num==0 Entonces
+			Escribir "numero neutro"
+		SiNo
+			si 0==residuo Entonces
+				contadorpar=contadorpar+1
+				Escribir num, " es un numero par"
+			SiNo
+				contadorimpar=contadorimpar+1
+				Escribir num, " es un numero impar"
+			FinSi
+		FinSi
+	FinPara
+	Escribir "numeros pares:" contadorpar
+	Escribir "numeros impares:" contadorimpar
+FinAlgoritmo
