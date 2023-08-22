@@ -1,0 +1,19 @@
+Algoritmo numeros_mayores_a_fila
+	Dimension arreglo[10000]
+	Escribir "Ingrese valores a tomar en cuenta"
+	Leer n
+    Para fila = 1 Hasta n Con Paso 1 Hacer
+        Escribir "VALOR ",fila,"/" n ":"
+        Leer arreglo[fila]
+    FinPara
+    Escribir " "
+    Escribir "INGRESE UN NÚMERO : "
+    Leer num
+    Escribir " "
+    Escribir Sin Saltar "Los elementos mayores que ",num, " son : "
+    Para fila = 1 Hasta 10 Con Paso 1 Hacer
+        Si (arreglo[fila] > num) Entonces
+            Escribir Sin Saltar arreglo[fila], ", "
+        FinSi
+    FinPara
+	
